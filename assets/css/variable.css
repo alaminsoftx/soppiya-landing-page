@@ -1,0 +1,33 @@
+:root {
+  /* color */
+  --slpPrimaryColor:#00A5FF;
+  --slpSecondaryColor:#01126C;
+  --slpPrimaryTextColor:#3E5570;
+  --slpWhite:#fff;
+  --slpBgColor1:#F1F5FF;
+  --slpTextcolor1:#95AFC0;
+  
+
+  /* gradient */
+  --slpPrimaryBtnColor: linear-gradient(to right, #00a5ff, #58c5ff);
+
+
+  /* border */
+  --slpPrimaryBorder: 1px solid #3E5570;
+  --slpPrimaryBorderColor:#3E5570;
+
+  /* shadow */
+  --splPrimaryShadow: 0px 0px 15px rgb(108 99 255 / 16%);
+
+
+  /* font size */
+  --slpFontSize12: 12px;
+  --slpFontSize14: 14px;
+  --slpFontSize16: 16px;
+  --slpFontSize18: 18px;
+  --slpFontSize20: 20px;
+  --slpFontSize36: 36px;
+  --slpFontSize48: 48px;
+
+
+}

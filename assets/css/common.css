@@ -1,0 +1,281 @@
+/* =======================================================
+==================  start container css ==================
+========================================================== */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size:var(--slpFontSize14);
+    color:var(--slpPrimaryTextColor);
+    font-weight: 400;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+p{
+    margin:0px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1620px;
+    width:100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.slpPrimaryShadow{
+    box-shadow: var(--splPrimaryShadow);
+}
+
+.slpBorderRadius5{
+    border-radius: 5px;
+}
+.slpLogoSize{
+    width:160px
+}
+
+.clearFix::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+/* =======================================================
+==================  end container css ====================
+========================================================== */
+
+/* =======================================================
+==================  start align ment css =================
+========================================================== */
+.slpTextLeft{
+    text-align: left;
+}
+.slpTextRight{
+    text-align: right;
+}
+.slpTextCenter{
+    text-align: center;
+}
+/* =======================================================
+==================  end align ment css ===================
+========================================================== */
+
+
+
+
+/* =======================================================
+===========  start margin and padding css ================
+========================================================== */
+
+/* start margin */
+
+.slpMT10{
+    margin-top:10px;
+}
+.slpMT25{
+    margin-top:25px;
+}
+.slpMB25{
+    margin-bottom:25px;
+}
+.slpMT30{
+    margin-top:30px;
+}
+.slpMB30{
+    margin-bottom:30px;
+}
+.slpMT40{
+    margin-top:40px;
+}
+.slpMB40{
+    margin-bottom:40px;
+}
+.slpMT60{
+    margin-top:60px;
+}
+.slpMB60{
+    margin-bottom:60px;
+}
+
+
+
+
+.slpMR10{
+    margin-right:10px;
+}
+/* end margin */
+
+
+/* start padding */
+.slpPT{
+    padding-top:60px;
+}
+.slpPB{
+    padding-bottom:60px;
+}
+
+
+.slpPY120{
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+/* end padding */
+
+/* =======================================================
+============  end margin and padding css =================
+========================================================== */
+
+
+
+/* =======================================================
+================  start button css =======================
+========================================================== */
+
+/* start large button */
+.slpPrimaryBtn{
+    background-image: var(--slpPrimaryBtnColor);
+    color:var(--slpWhite);
+}
+.slpLargeBtn{
+    width:180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slpOutLineBtn{
+    border:var(--slpPrimaryBorder);
+}
+/* end large button */
+
+
+/* start medium button */
+
+.slpMediumBtn{
+    width:140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* end medium button */
+
+
+/* start small button */
+
+.slpSmallBtn{
+    width:120px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* end small button */
+
+/* =======================================================
+==================  end button css =======================
+========================================================== */
+
+
+
+/* =======================================================
+====================  start icon css =====================
+========================================================== */
+
+/* start about area icon size */
+.slpSocialIconSize{
+    width:30px;
+    height:30px;
+}
+/* end about area icon size */
+
+
+/* start support icon size */
+.slpSupportIconSize{
+    width:35px;
+    height:35px;
+}
+/* end support icon size */
+
+
+/* start social icon size */
+.slpSocialIconSize{
+    width:18px;
+    height:20px;
+}
+/* end social icon size */
+
+/* =======================================================
+=====================  end icon css ======================
+========================================================== */
+
+
+
+/* =======================================================
+==================  start dislpay ===================
+========================================================== */
+
+.slpDInline{
+    display: inline-block;
+}
+.slpDBlock{
+    display: block;
+}
+.slpDNone{
+    display: none;
+}
+.slpDFlex{
+    display:flex;
+}
+.slpFlexRow{
+    flex-direction: row;
+}
+.slpFlexCol{
+    flex-direction: column;
+}
+/* justify content */
+.slpJustifyEnd{
+    justify-content: flex-end;
+}
+.slpJustifyStart{
+    justify-content: flex-start;
+}
+.slpJustifyCenter{
+    justify-content: center;
+}
+.slpSpaceBetween{
+    justify-content: space-between;
+}
+.slpSpaceAround{
+    justify-content: space-around;
+}
+
+/* align item */
+.slpAlignEnd{
+    align-items: flex-end;
+}
+.slpAlignStart{
+    align-items: flex-start;
+}
+.slpAlignCenter{
+    align-items: center;
+}
+/* =======================================================
+====================  end dislpay ===================
+========================================================== */
+

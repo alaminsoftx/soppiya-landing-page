@@ -1,0 +1,83 @@
+/* ======================================================
+=================== start header css ====================
+========================================================= */
+.slpNavItem{
+    font-size: var(--slpFontSize16);
+    font-weight: 600;
+   cursor: pointer;
+}
+.slpNavItem:not(:last-child){
+    margin-right:40px
+}
+/* ======================================================
+=================== end header css ======================
+========================================================= */
+
+
+
+/* ======================================================
+=================== start banner css ====================
+========================================================= */
+.slpBannerSection{
+    background-color:var(--slpBgColor1);
+    height: 100vh;
+}
+.slpMainBannerLeft, .slpMainBannerRight{
+    width:50%;
+}
+.slpBannerHeadingText{
+    font-size: var(--slpFontSize48);
+    font-weight: 600;
+    color:var(--slpSecondaryColor);
+    line-height: 60px;
+}
+.slpSubHeadingText{
+    line-height: 24px;
+}
+.slpCountDownColTop{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--slpWhite);
+    border-radius: 5px;
+}
+.slpCountDownColInner{
+
+}
+.slpCountDownNumber {
+    font-size: var(--slpFontSize18);
+    font-weight: 600;
+    color:var(--slpSecondaryColor);
+}
+.splCountDownDay{
+    color:var(--slpTextcolor1);
+    font-size:var(--slpFontSize12);
+    font-weight: 400;
+}
+.slpCountDownColBottom{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slpColonIcon{
+    width: 16px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* right */
+.slpMainBannerRightInner .slpBannerRightImg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ======================================================
+===================== end banner css ====================
+========================================================= */
