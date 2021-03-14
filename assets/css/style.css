@@ -1,6 +1,16 @@
 /* ======================================================
 =================== start header css ====================
 ========================================================= */
+.slpHeaderwrapper{
+   position: relative;
+}
+.slpHeaderSection {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+}
 .slpNavItem{
     font-size: var(--slpFontSize16);
     font-weight: 600;
@@ -21,13 +31,32 @@
 .slpBannerSection{
     background-color:var(--slpBgColor1);
     height: 100vh;
+    min-height: 768px;
+    /* padding-top:150px;
+    padding-bottom: 100px; */
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+ 
+}
+.slpBannerSection::after {
+    content: "";
+    position: absolute;
+    width: 1617px;
+    height: 1617px;
+    left: 50%;
+    bottom: 0;
+    background-image: var(--slpWhiteGradient);
+    border-radius: 50%;
+    z-index: -1;
+  
 }
 .slpMainBannerLeft, .slpMainBannerRight{
     width:50%;
 }
 .slpBannerHeadingText{
     font-size: var(--slpFontSize48);
-    font-weight: 600;
+    font-weight: 700;
     color:var(--slpSecondaryColor);
     line-height: 60px;
 }
@@ -43,9 +72,7 @@
     background-color:var(--slpWhite);
     border-radius: 5px;
 }
-.slpCountDownColInner{
 
-}
 .slpCountDownNumber {
     font-size: var(--slpFontSize18);
     font-weight: 600;
@@ -54,7 +81,7 @@
 .splCountDownDay{
     color:var(--slpTextcolor1);
     font-size:var(--slpFontSize12);
-    font-weight: 400;
+    font-weight: 500;
 }
 .slpCountDownColBottom{
     width: 50px;
@@ -70,6 +97,14 @@
     display: flex;
     justify-content: center;
 }
+.slpCountDownTopText{
+    font-family: 'Pacifico', cursive;
+    font-size:var( --slpFontSize36);
+    color:var(--slpPrimaryColor);
+    /* line-height: 24px; */
+    display: block;
+}
+
 
 /* right */
 .slpMainBannerRightInner .slpBannerRightImg{
@@ -78,6 +113,296 @@
     align-items: center;
     justify-content: center;
 }
+.slpMainBannerRightInner {
+    max-width: 730px;
+    height: 600px;
+    width: 100%;
+    float: right;
+}
+.slpBannerGetStartBtn{
+    font-size: var(--slpFontSize14);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
 /* ======================================================
 ===================== end banner css ====================
+========================================================= */
+
+
+/* ======================================================
+================= start grow faser css ==================
+========================================================= */
+.slpGrowFasterLeft{
+    width:50%;
+}
+.slpSectionHeaderText{
+    font-size: var(--slpFontSize36);
+    font-weight: 700;
+    color:var(--slpSecondaryColor);
+    line-height: 48px;
+    
+}
+
+/* right */
+.slpGrowFasterRight{
+    width:50%;
+    padding-left:50px;
+}
+.slpGrowFasterText{
+    line-height: 24px;
+}
+/* ======================================================
+=================== end grow faser css ==================
+========================================================= */
+
+/* ======================================================
+=================== start choose us css =================
+========================================================= */
+
+.slpChooseUsSectionHeading{
+    max-width: 720px;
+    width:100%;
+    margin: 0 auto;
+}
+.slpChooseUsBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.slpChooseUsCol {
+    width: calc(25% - 45px);
+}
+.slpChooseUsTitle{
+    font-size: var(--slpFontSize20);
+    font-weight: 700;
+    line-height: 24px;
+    color:var(--slpPrimaryTextColor);
+}
+.slpChooseUsText{
+    line-height: 24px;
+}
+/* ======================================================
+=================== end choose us css ===================
+========================================================= */
+
+/* ======================================================
+================== start wherever css ===================
+========================================================= */
+.slpWhereverSection{
+    background-color:var(--slpBgColor1);
+}
+.slpWhereverHeaderHeader{
+    max-width: 610px;
+    width:100%;
+}
+.slpWhereverItem {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.slpWhereverItemCol{
+    width:calc(50% - 45px);
+    margin-bottom: 32px;
+}
+.slpWhereverImg{
+    max-width: 690px;
+    width:100%;
+}
+.slpWhereverImg img{
+    width:100%;
+}
+/* ======================================================
+================== end wherever css =====================
+========================================================= */
+
+
+/* ======================================================
+============== start ask question css ===================
+========================================================= */
+
+.slpAskQuestionMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+}
+.slpAskQuestionLeft{
+    width:50%;
+}
+.slpAskQuestionRight {
+    width: 50%;
+    padding-left: 64px;
+}
+.slpAskQuestionLeftImg{
+    max-width: 690px;
+    width: 100%;
+}
+.slpAskQuestionLeftImg img{
+    width:100%;
+}
+
+.slpAskQuestionForm {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 60px;
+}
+.slpAskNameField{
+    position: relative;
+}
+.slpInputFieldLabel {
+    position: absolute;
+    background: #fff;
+    padding: 1px 5px;
+    top: -10px;
+    left: 12px;
+}
+.slpAskNameField:not(:last-child){
+    margin-bottom:33px;
+}
+.slpSubmitButton {
+    margin-top: 20px;
+}
+/* ======================================================
+============== end ask question css =====================
+========================================================= */
+
+
+/* ======================================================
+========== start satisfied customer css =================
+========================================================= */
+.slpSatisFiedPartner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:60px;
+}
+.slpPartnercol {
+    width: calc(16.66% - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 5px;
+}
+.slpPartnercol img{
+    width:160px;
+}
+/* ======================================================
+============ end satisfied customer css =================
+========================================================= */
+
+
+/* ======================================================
+============== start business idea css ==================
+========================================================= */
+.slpBusinessIdeaSection{
+    background-color:var(--slpBgColor1);
+}
+
+.slpBusinessIdeaHeading {
+    max-width: 790px;
+    width: 100%;
+    margin: 0 auto;
+}
+.slpBusinessAreaButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.slpviewButton{
+    color:var(--slpPrimaryTextColor);
+    margin-left: 20px;
+}
+/* ======================================================
+================ end business idea css ==================
+========================================================= */
+
+
+/* ======================================================
+================== start footer  css ====================
+========================================================= */
+.slpFooterSection{
+    background-color:var(--slpSecondaryColor);
+}
+.slpFooterDescpText{
+    color:var(--slpWhite);
+    line-height: 24px;
+}
+.slpFooterMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.slpFooterCol1, .slpFooterCol2 {
+    width: 20%;
+}
+.slpFooterDescription {
+    margin-top: 20px;
+}
+.slpSocialIconMargin:not(:last-child){
+    margin-right: 27px;
+}
+.slpFooterSocialIconArea {
+    margin-top: 30px;
+}
+
+/* title */
+.slpFooterColTitleText{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color:var(--slpWhite);
+    text-transform: uppercase;
+}
+.slpAddressIcon {
+    width: 13px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+.slpAddressText{
+    color:var(--slpWhite);
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.slpMailText{
+    color:var(--slpWhite);
+    line-height: 24px;
+}
+.slpAddressNavItem {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+/* col 3  */
+.slpFooterCol4{
+    width:22%;
+}
+.slpFooterCol3{
+    width:15%
+}
+.slpUsFullLinkNav{
+    display: flex;
+    flex-direction: column;
+}
+.slpUsfullLinkNavItem {
+    color: var(--slpWhite);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.slpSearchFieldArea {
+    position: relative;
+    margin-top: 25px;
+}
+/* ======================================================
+==================== end footer  css ====================
 ========================================================= */

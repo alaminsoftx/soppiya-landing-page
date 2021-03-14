@@ -26,7 +26,7 @@ a{
 .container{
     max-width: 1620px;
     width:100%;
-    padding: 20px;
+    padding: 0px 20px;
     margin: 0 auto;
 }
 
@@ -78,6 +78,15 @@ a{
 .slpMT10{
     margin-top:10px;
 }
+.slpMT15{
+    margin-top:15px;
+}
+.slpMB15{
+    margin-bottom:15px;
+}
+.slpMT20{
+    margin-top:20px;
+}
 .slpMT25{
     margin-top:25px;
 }
@@ -103,11 +112,17 @@ a{
     margin-bottom:60px;
 }
 
-
+.slpMT90{
+    margin-top:90px;
+}
 
 
 .slpMR10{
     margin-right:10px;
+}
+
+.slpML100{
+    margin-left:100px;
 }
 /* end margin */
 
@@ -120,9 +135,15 @@ a{
     padding-bottom:60px;
 }
 
-
+.slpPY60{
+    padding-top:60px;
+    padding-bottom:60px;
+}
 .slpPY120{
     padding-top:120px;
+    padding-bottom:120px;
+}
+.slpPB120{
     padding-bottom:120px;
 }
 
@@ -151,6 +172,8 @@ a{
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .slpOutLineBtn{
     border:var(--slpPrimaryBorder);
@@ -168,6 +191,7 @@ a{
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* end medium button */
@@ -175,18 +199,27 @@ a{
 
 /* start small button */
 
-.slpSmallBtn{
-    width:120px;
+.slpSmallBtn {
+    width: 120px;
     height: 40px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 /* end small button */
 
+
+button{
+    border:none;
+    outline: none;
+    background:transparent;
+    font-family: "Montserrat", sans-serif;
+}
 /* =======================================================
 ==================  end button css =======================
 ========================================================== */
@@ -198,7 +231,7 @@ a{
 ========================================================== */
 
 /* start about area icon size */
-.slpSocialIconSize{
+.slpChooseUsSize{
     width:30px;
     height:30px;
 }
@@ -217,6 +250,7 @@ a{
 .slpSocialIconSize{
     width:18px;
     height:20px;
+    cursor: pointer;
 }
 /* end social icon size */
 
@@ -276,6 +310,58 @@ a{
     align-items: center;
 }
 /* =======================================================
-====================  end dislpay ===================
+====================  end dislpay ========================
+========================================================== */
+
+/* =======================================================
+================== start input field =====================
+========================================================== */
+.slpInputField {
+    outline: none;
+    height: 44px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--slpPrimaryTextColor);
+    padding: 0px 10px;
+}
+.slpTextAreaField {
+    outline: none;
+    height: 130px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--slpPrimaryTextColor);
+    padding: 10px 10px;
+    line-height: 1;
+}
+
+.slpSearchField{
+    outline: none;
+    height: 44px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--slpWhite);
+    padding: 0px 10px;
+    background:transparent;
+    color:var(--slpWhite);
+}
+.slpSearchField::placeholder{
+    font-size: var(--slpFontSize14);
+    color: var(--slpPlaceHolderColor);
+}
+.slpSearchFieldArea{
+    position: relative;
+}
+.slpSearchButton {
+    width: 50px;
+    height: 44px;
+    background: var(--slpWhite);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+/* =======================================================
+==================== end input field =====================
 ========================================================== */
 
