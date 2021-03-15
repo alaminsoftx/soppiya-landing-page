@@ -6,11 +6,15 @@
     margin:0;
     padding: 0;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: "Montserrat", sans-serif;
     font-size:var(--slpFontSize14);
     color:var(--slpPrimaryTextColor);
     font-weight: 400;
+    overflow-x: hidden;
 }
 ul{
     padding:0;
@@ -26,13 +30,14 @@ a{
 .container{
     max-width: 1620px;
     width:100%;
-    padding: 0px 20px;
+    padding: 0px 15px;
     margin: 0 auto;
 }
 
 .slpPrimaryShadow{
     box-shadow: var(--splPrimaryShadow);
 }
+
 
 .slpBorderRadius5{
     border-radius: 5px;
@@ -183,9 +188,9 @@ a{
 
 /* start medium button */
 
-.slpMediumBtn{
-    width:140px;
-    height: 40px;
+.slpMediumBtn {
+    width: 130px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +206,7 @@ a{
 
 .slpSmallBtn {
     width: 120px;
-    height: 40px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,6 +256,7 @@ button{
     width:18px;
     height:20px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 /* end social icon size */
 
@@ -318,15 +324,16 @@ button{
 ========================================================== */
 .slpInputField {
     outline: none;
-    height: 44px;
+    height: 35px;
     border-radius: 5px;
     width: 100%;
     border: 1px solid var(--slpPrimaryTextColor);
     padding: 0px 10px;
 }
+
 .slpTextAreaField {
     outline: none;
-    height: 130px;
+    height: 100px;
     border-radius: 5px;
     width: 100%;
     border: 1px solid var(--slpPrimaryTextColor);
@@ -336,7 +343,7 @@ button{
 
 .slpSearchField{
     outline: none;
-    height: 44px;
+    height: 35px;
     border-radius: 5px;
     width: 100%;
     border: 1px solid var(--slpWhite);
@@ -353,15 +360,72 @@ button{
 }
 .slpSearchButton {
     width: 50px;
-    height: 44px;
+    height: 35px;
     background: var(--slpWhite);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     position: absolute;
     right: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
 }
 /* =======================================================
 ==================== end input field =====================
 ========================================================== */
 
+/* responsive */
+
+@media(min-width:768px){
+    .slpInputField {
+        height: 44px;
+        padding: 0px 10px;
+    }
+    .slpTextAreaField {
+        height: 144px;
+    }
+    .slpSearchField{
+        height: 44px;
+    }
+    .slpSearchButton {
+        height: 44px;
+    }
+    .container{
+        padding: 0px 20px;
+    }
+    
+}
+
+
+@media(min-width:1025px){
+    /* start large button */
+
+    .slpLargeBtn{
+        width:180px;
+        height: 40px;
+    }
+    /* end large button */
+
+
+    /* start medium button */
+
+    .slpMediumBtn{
+        width:140px;
+        height: 40px;
+    }
+
+    /* end medium button */
+
+
+    /* start small button */
+
+    .slpSmallBtn {
+        width: 120px;
+        height: 40px;
+    }
+
+    /* end small button */
+
+}

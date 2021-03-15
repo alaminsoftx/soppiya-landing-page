@@ -24,47 +24,51 @@
     ========================================================= -->
     <!-- start header section -->
     <section class="slpHeaderWrapper">
-        <header class="slpHeaderSection">
-            <div class="container ">
-                <!--start  main header -->
-                <div class="slpMainHeader slpDFlex slpAlignCenter slpSpaceBetween">
-                    <!--start  header left -->
-                    <div class="slpLeftHeader">
-                        <!-- logo -->
-                        <div class="slpLogo">
-                            <img class="slpLogoSize" src="assets/images/soppiyaLogo.svg" alt="" />
+        <header class="slpStickyHeader" id="navbar">
+            <div class=" slpHeaderSection">
+                <div class="container ">
+                    <!--start  main header -->
+                    <div class="slpMainHeader">
+                        <!--start  header left -->
+                        <div class="slpLeftHeader">
+                            <!-- logo -->
+                            <div class="slpLogo">
+                                <img class="slpLogoSize" src="assets/images/soppiyaLogo.svg" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <!--end header left -->
+                        <!--end header left -->
 
-                    <!-- start header right -->
-                    <div class="slpRightHeader">
-                        <div class="slpPrimaryNav">
-                            <ul class="slpDFlex slpFlexAlignCenter slpAlignCenter">
-                                <li class="slpNavItem">Market</li>
-                                <li class="slpNavItem">Pricing</li>
-                                <li class="slpNavItem">Sign in</li>
-                                <li class="slpBannerGetStartBtn slpMediumBtn slpPrimaryBtn">Get Start</li>
-                            </ul>
+                        <!-- start header right -->
+                        <div class="slpRightHeader">
+                            <div class="slpPrimaryNav">
+                                <ul class="slpNav">
+                                    <li class="slpNavItem slpHideOnMobileDevice">Marketplace </li>
+                                    <li class="slpNavItem ">Pricing</li>
+                                    <li class="slpNavItem slpHideOnMobileDevice">Sign in</li>
+                                    <li class="slpBannerGetStartBtn slpMediumBtn slpPrimaryBtn slpHeaderGetStartBtn">Get
+                                        Start</li>
+                                </ul>
+                            </div>
                         </div>
+                        <!-- end header right -->
                     </div>
-                    <!-- end header right -->
+                    <!-- end main header -->
                 </div>
-                <!-- end main header -->
             </div>
         </header>
         <!-- start header section -->
 
         <!-- start banner section  -->
-        <section class="slpBannerSection slpDFlex slpAlignCenter slpPY120">
+        <section class="slpBannerSection slpPY120">
             <div class="container">
                 <!-- start main banner -->
-                <div class="slpMainBanner slpDFlex">
+                <div class="slpMainBanner ">
                     <!-- start banner left -->
                     <div class="slpMainBannerLeft">
                         <!-- heading -->
                         <div class="slpBannerHeadingArea slpMT90">
-                            <p class="slpBannerHeadingText slpMB30">Anyone, anywhere, can start <br>a business</p>
+                            <p class="slpBannerHeadingText slpMB30">Anyone, anywhere, can start <span
+                                    class="slpLineBreak">a business</span></p>
                             <p class="slpSubHeadingText">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -76,7 +80,7 @@
                         </div>
 
                         <!-- start count down -->
-                        <div class="slpCountDownArea slpDFlex slpMT20">
+                        <div class="slpCountDownArea slpMT20">
                             <!-- col -->
                             <div class="slpCountDownCol slpDFlex">
                                 <div class="slpCountDownColInner">
@@ -144,7 +148,7 @@
                     <!-- end banner left -->
 
                     <!-- start banner right -->
-                    <div class="slpMainBannerRight slpJustifyEnd">
+                    <div class="slpMainBannerRight">
                         <div class="slpMainBannerRightInner">
                             <img class="slpBannerRightImg" src="assets/images/bannerImage.svg" alt="" />
                         </div>
@@ -167,7 +171,7 @@
     <section class="slpGrowFasterSection slpPY120">
         <div class="container">
             <!-- start grow faster -->
-            <div class="slpGrowFasterMain slpDFlex slpAlignCenter">
+            <div class="slpGrowFasterMain ">
                 <!-- start grow faster left -->
                 <div class="slpGrowFasterLeft">
                     <div class="loadFasterImage">
@@ -212,7 +216,7 @@
         <div class="container">
             <div class="slpChooseUs">
                 <!--start  section title -->
-                <div class="slpChooseUsSectionHeading slpTextCenter">
+                <div class="slpChooseUsSectionHeading ">
                     <div class="slpSectionHeaderText">Why Should Choose Us</div>
                     <p class="slpSubHeadingText slpMT20">Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -296,7 +300,7 @@
     <section class="slpWhereverSection slpPY120">
         <div class="container">
             <!--start wherever main -->
-            <div class="slpWhereverMain slpDFlex slpSpaceBetween slpAlignCenter">
+            <div class="slpWhereverMain ">
                 <!--start wherever left-->
                 <div class="slpWhereverLeft">
                     <!--start  section title -->
@@ -439,7 +443,7 @@
         <div class="container">
             <div class="slpSatisFiedMain">
                 <!--start  section title -->
-                <div class="slpChooseUsSectionHeading slpTextCenter">
+                <div class="slpChooseUsSectionHeading">
                     <div class="slpSectionHeaderText">Our Satisficed Customers</div>
                 </div>
                 <!--end  section title -->
@@ -494,7 +498,7 @@
 
                 <!-- button  -->
                 <div class="slpBusinessAreaButton slpMT30">
-                    <button class="slpLargeBtn slpPrimaryBtn">View Demos</button>
+                    <button class="slpLargeBtn slpPrimaryBtn slpViewBtnMargin">View Demos</button>
                     <button class="slpviewButton slpLargeBtn slpOutLineBtn">View Pricing</button>
                 </div>
             </div>
@@ -521,7 +525,8 @@
 
                     <!-- description -->
                     <div class="slpFooterDescription">
-                        <p class="slpFooterDescpText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="slpFooterDescpText">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
                     </div>
 
                     <!-- footer social icon -->
@@ -542,53 +547,55 @@
                 </div>
                 <!-- col -->
                 <div class="slpFooterCol2">
-                   <div class="slpFooterColTitle">
-                       <p class="slpFooterColTitleText">Contact Us</p>
-                   </div>
-                   <!-- address -->
-                   <ul class="slpAddressNav">
-                       <li class="slpAddressNavItem">
+                    <div class="slpFooterColTitle">
+                        <p class="slpFooterColTitleText">Contact Us</p>
+                    </div>
+                    <!-- address -->
+                    <ul class="slpAddressNav">
+                        <li class="slpAddressNavItem">
                             <p><img class="slpAddressIcon" src="assets/images/location.svg" alt=""></p>
-                            <p class="slpAddressText">Flat #A5, House #668, Road #9, Avenue #5, Mirpur DOHS, Dhaka-1216</p>
+                            <p class="slpAddressText">Flat #A5, House #668, Road #9, Avenue #5, Mirpur DOHS, Dhaka-1216
+                            </p>
                         </li>
-                       <li class="slpAddressNavItem">
+                        <li class="slpAddressNavItem">
                             <p><img class="slpAddressIcon" src="assets/images/envelope.svg" alt=""></p>
                             <div class="slpAddressText">
                                 <p class="slpMailText">sales@soppiya.com</p>
                                 <p class="slpMailText">support@soppiya.com</p>
                             </div>
                         </li>
-                       <li class="slpAddressNavItem">
+                        <li class="slpAddressNavItem">
                             <p><img class="slpAddressIcon" src="assets/images/phone.svg" alt=""></p>
                             <div class="slpAddressText">
                                 <p class="slpMailText">+880 1889 977 001 </p>
                                 <p class="slpMailText">+880 1841 073 080</p>
                             </div>
                         </li>
-                   </ul>
+                    </ul>
                 </div>
                 <!-- col -->
                 <div class="slpFooterCol3">
-                   <div class="slpFooterColTitle">
-                       <p class="slpFooterColTitleText">Useful links</p>
-                   </div>
-                   <ul class="slpUsFullLinkNav">
-                       <li class="slpUsfullLinkNavItem">About</li>
-                       <li class="slpUsfullLinkNavItem">Join Our Team</li>
-                       <li class="slpUsfullLinkNavItem">Our Demos</li>
-                       <li class="slpUsfullLinkNavItem">Pricing</li>
-                       <li class="slpUsfullLinkNavItem">Terms & Conditions</li>
-                       <li class="slpUsfullLinkNavItem">Privacy Policy </li>
-                   </ul>
+                    <div class="slpFooterColTitle">
+                        <p class="slpFooterColTitleText">Useful links</p>
+                    </div>
+                    <ul class="slpUsFullLinkNav">
+                        <li class="slpUsfullLinkNavItem">About</li>
+                        <li class="slpUsfullLinkNavItem">Join Our Team</li>
+                        <li class="slpUsfullLinkNavItem">Our Demos</li>
+                        <li class="slpUsfullLinkNavItem">Pricing</li>
+                        <li class="slpUsfullLinkNavItem">Terms & Conditions</li>
+                        <li class="slpUsfullLinkNavItem">Privacy Policy </li>
+                    </ul>
                 </div>
                 <!-- col -->
                 <div class="slpFooterCol4">
-                   <div class="slpFooterColTitle">
-                       <p class="slpFooterColTitleText">Get in touch</p>
-                   </div>
+                    <div class="slpFooterColTitle">
+                        <p class="slpFooterColTitleText">Get in touch</p>
+                    </div>
                     <!-- description -->
                     <div class="slpFooterDescription">
-                        <p class="slpFooterDescpText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="slpFooterDescpText">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
                     </div>
 
                     <!-- search field -->
@@ -603,7 +610,17 @@
     <!-- ========================================================
     =================== end footer section ======================
     ========================================================= -->
+    <script>
 
+        window.onscroll = function(){
+            var navbar = document.getElementById("navbar");
+            if(this.scrollY === 0){
+                navbar.classList.remove("sticky");
+            }else{
+                navbar.classList.add("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,39 @@
 /* ======================================================
 =================== start header css ====================
 ========================================================= */
+.slpMainHeader{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.sticky {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+    height: 70px;
+    padding: 10px 0 !important;
+    background-color: var(--slpWhite);
+    box-shadow: var(--splPrimaryShadow);
+    display: flex;
+    align-items: center;
+}
+.sticky .slpHeaderSection {
+    padding: 4px 0 !important;
+}
+.sticky .slpLogoSize {
+    width: 85px;
+    display: flex;
+    align-items: center;
+}
+.slpNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .slpHeaderwrapper{
    position: relative;
 }
@@ -12,7 +45,7 @@
     padding: 20px 0;
 }
 .slpNavItem{
-    font-size: var(--slpFontSize16);
+    font-size: var(--slpFontSize14);
     font-weight: 600;
    cursor: pointer;
 }
@@ -28,17 +61,22 @@
 /* ======================================================
 =================== start banner css ====================
 ========================================================= */
-.slpBannerSection{
+/* .slpBannerSection{
     background-color:var(--slpBgColor1);
     height: 100vh;
     min-height: 768px;
-    /* padding-top:150px;
-    padding-bottom: 100px; */
     position: relative;
     overflow: hidden;
     z-index: 9;
  
+} */
+.slpBannerSection {
+    background-color: var(--slpBgColor1);
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
 }
+
 .slpBannerSection::after {
     content: "";
     position: absolute;
@@ -51,15 +89,42 @@
     z-index: -1;
   
 }
-.slpMainBannerLeft, .slpMainBannerRight{
-    width:50%;
+.slpMainBanner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/* .slpMainBanner{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.slpMainBannerLeft{
+    width:100%;
+}
+
+.slpCountDownArea{
+    display: flex;
+}
+
+
+
+.slpMainBannerRight {
+    width: 100%;
+    order: -1;
+    margin-top:60px;
 }
 .slpBannerHeadingText{
+    font-size: var(--slpFontSize26);
+    font-weight: 700;
+    color:var(--slpSecondaryColor);
+    line-height: 36px;
+}
+/* .slpBannerHeadingText{
     font-size: var(--slpFontSize48);
     font-weight: 700;
     color:var(--slpSecondaryColor);
     line-height: 60px;
-}
+} */
 .slpSubHeadingText{
     line-height: 24px;
 }
@@ -99,28 +164,41 @@
 }
 .slpCountDownTopText{
     font-family: 'Pacifico', cursive;
-    font-size:var( --slpFontSize36);
+    font-size:var( --slpFontSize22);
     color:var(--slpPrimaryColor);
-    /* line-height: 24px; */
     display: block;
 }
+/* .slpCountDownTopText{
+    font-family: 'Pacifico', cursive;
+    font-size:var( --slpFontSize36);
+    color:var(--slpPrimaryColor);
+    line-height: 24px;
+    display: block;
+} */
 
 
 /* right */
 .slpMainBannerRightInner .slpBannerRightImg{
     width: 100%;
+}
+/* .slpMainBannerRightInner .slpBannerRightImg{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 .slpMainBannerRightInner {
+
+    width: 100%;
+}
+/* .slpMainBannerRightInner {
     max-width: 730px;
     height: 600px;
     width: 100%;
     float: right;
-}
+} */
 .slpBannerGetStartBtn{
-    font-size: var(--slpFontSize14);
+    font-size: var(--slpFontSize12);
     font-weight: 600;
     text-transform: uppercase;
 
@@ -133,21 +211,43 @@
 /* ======================================================
 ================= start grow faser css ==================
 ========================================================= */
-.slpGrowFasterLeft{
-    width:50%;
+.slpGrowFasterMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+.slpGrowFasterLeft{
+    width:100%;
+}
+
 .slpSectionHeaderText{
+    font-size: var(--slpFontSize22);
+    font-weight: 700;
+    color:var(--slpSecondaryColor);
+    line-height: 32px;
+    
+}
+
+
+/* .slpSectionHeaderText{
     font-size: var(--slpFontSize36);
     font-weight: 700;
     color:var(--slpSecondaryColor);
     line-height: 48px;
     
-}
+} */
 
 /* right */
+
+.slpSectionHeaderArea {
+    margin-top: 30px;
+}
 .slpGrowFasterRight{
-    width:50%;
-    padding-left:50px;
+    width:100%;
+    /* padding-left:50px; */
+}
+.loadFasterImage img{
+    width:100%;
 }
 .slpGrowFasterText{
     line-height: 24px;
@@ -171,15 +271,27 @@
     justify-content: space-between;
     margin-top: 60px;
 }
-.slpChooseUsCol {
+/* .slpChooseUsCol {
     width: calc(25% - 45px);
+} */
+.slpChooseUsCol {
+    width: 100%;
+}
+.slpChooseUsCol:not(:last-child){
+    margin-bottom: 40px;
 }
 .slpChooseUsTitle{
-    font-size: var(--slpFontSize20);
+    font-size: var(--slpFontSize18);
     font-weight: 700;
     line-height: 24px;
     color:var(--slpPrimaryTextColor);
 }
+/* .slpChooseUsTitle{
+    font-size: var(--slpFontSize20);
+    font-weight: 700;
+    line-height: 24px;
+    color:var(--slpPrimaryTextColor);
+} */
 .slpChooseUsText{
     line-height: 24px;
 }
@@ -197,6 +309,11 @@
     max-width: 610px;
     width:100%;
 }
+.slpWhereverMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .slpWhereverItem {
     margin-top: 60px;
     display: flex;
@@ -204,14 +321,31 @@
     justify-content: space-between;
 
 }
+.slpWhereverLeft{
+    width:100%;
+}
+.slpWhereverRight {
+    width: 100%;
+    order: -1;
+    margin-bottom: 40px;
+}
 .slpWhereverItemCol{
     width:calc(50% - 45px);
     margin-bottom: 32px;
 }
+.slpWhereverItemCol:nth-child(3){
+    margin-bottom:0px;
+}
+.slpWhereverItemCol:nth-child(4){
+    margin-bottom:0px;
+}
 .slpWhereverImg{
-    max-width: 690px;
     width:100%;
 }
+/* .slpWhereverImg{
+    max-width: 690px;
+    width:100%;
+} */
 .slpWhereverImg img{
     width:100%;
 }
@@ -227,21 +361,27 @@
 .slpAskQuestionMain{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+/* .slpAskQuestionMain{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1450px;
     width: 100%;
     margin: 0 auto;
-}
+} */
 .slpAskQuestionLeft{
-    width:50%;
+    width:100%;
 }
 .slpAskQuestionRight {
-    width: 50%;
-    padding-left: 64px;
+    width: 100;
+    margin-top:40px;
+    /* padding-left: 64px; */
 }
 .slpAskQuestionLeftImg{
-    max-width: 690px;
+    /* max-width: 690px; */
     width: 100%;
 }
 .slpAskQuestionLeftImg img{
@@ -251,8 +391,13 @@
 .slpAskQuestionForm {
     max-width: 600px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 40px;
 }
+/* .slpAskQuestionForm {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 60px;
+} */
 .slpAskNameField{
     position: relative;
 }
@@ -284,15 +429,26 @@
     margin-top:60px;
 }
 .slpPartnercol {
-    width: calc(16.66% - 25px);
+    width: calc(50% - 10px);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
     border-radius: 5px;
 }
+.slpPartnercol:not(:last-child){
+    margin-bottom: 20px;
+}
+/* .slpPartnercol {
+    width: calc(16.66% - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 5px;
+} */
 .slpPartnercol img{
-    width:160px;
+    width:100px;
 }
 /* ======================================================
 ============ end satisfied customer css =================
@@ -316,9 +472,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.slpviewButton{
-    color:var(--slpPrimaryTextColor);
-    margin-left: 20px;
+.slpviewButton {
+    color: var(--slpPrimaryTextColor);
+    /* margin-left: 20px; */
+    margin-right: 15px;
+}
+.slpViewBtnMargin {
+    margin-bottom: 18px;
+    margin-right: 15px;
 }
 /* ======================================================
 ================ end business idea css ==================
@@ -341,8 +502,12 @@
     justify-content: space-between;
 }
 .slpFooterCol1, .slpFooterCol2 {
-    width: 20%;
+    width: 100%;
+    margin-bottom: 40px;
 }
+/* .slpFooterCol1, .slpFooterCol2 {
+    width: 20%;
+} */
 .slpFooterDescription {
     margin-top: 20px;
 }
@@ -385,11 +550,18 @@
 
 /* col 3  */
 .slpFooterCol4{
+    width:100%;
+}
+.slpFooterCol3{
+    width:100%;
+    margin-bottom: 40px;
+}
+/* .slpFooterCol4{
     width:22%;
 }
 .slpFooterCol3{
     width:15%
-}
+} */
 .slpUsFullLinkNav{
     display: flex;
     flex-direction: column;
@@ -403,6 +575,250 @@
     position: relative;
     margin-top: 25px;
 }
+.slpHideOnMobileDevice{
+    display: none;
+}
+
 /* ======================================================
 ==================== end footer  css ====================
 ========================================================= */
+
+
+/* responsive */
+
+
+@media(max-width:414px){
+    .slpHeaderGetStartBtn.slpMediumBtn {
+        width: 85px !important;
+        height: 32px;
+    }
+    .slpNavItem{
+        margin-right: 12px !important;
+    }
+    .slpLogoSize {
+        width: 130px;
+    }
+    .sticky .slpLogoSize {
+        width: 85px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media(min-width:414px){
+    .slpviewButton {
+        color: var(--slpPrimaryTextColor);
+        /* margin-left: 20px; */
+        /* margin-right: 15px; */
+    }
+    .slpViewBtnMargin {
+        margin-bottom: 18px;
+        margin-right: 15px;
+    }
+}
+@media(min-width:575px){
+    .slpPartnercol {
+        width: calc(33.33% - 10px);
+    }
+    .slpChooseUsCol {
+        width: calc(50% - 20px);
+    }
+}
+
+
+@media(min-width:768px){
+    
+    .slpNav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .slpPartnercol {
+        width: calc(20% - 10px);
+    }
+    .slpviewButton{
+        margin-left: 20px;
+    }
+
+    .slpMainBanner {
+        flex-direction: row;
+    }
+    .slpMainBannerLeft {
+        width: 45%;
+    }
+    .slpMainBannerRight {
+        width: 55%;
+        order: 1;
+        margin-top: 0px;
+    }
+    .slpBannerSection {
+        height: 100vh;
+        min-height: 768px;
+        align-items: center;
+        display: flex;
+    }
+
+    .slpGrowFasterMain {
+        flex-direction: row;
+        align-items: center;
+    }
+    .slpGrowFasterLeft {
+        width: 50%;
+    }
+    .loadFasterImage{
+        max-width: 740px;
+        width:100%;
+    }
+    .loadFasterImage img{
+        width:100%;
+    }
+    .slpGrowFasterRight {
+        width: 50%;
+        padding-left: 60px;
+    }
+    .slpChooseUsSectionHeading {
+        text-align: center;
+    }
+    .slpChooseUsCol {
+        width: calc(50% - 35px);
+    }
+    .slpWhereverMain {
+        flex-direction: row;
+    }
+    .slpWhereverLeft {
+        width: 50%;
+    }
+    .slpWhereverRight {
+        width: 50%;
+        order: 1;
+        margin-bottom: 0px;
+    }
+    .slpWhereverImg{
+        max-width: 690px;
+        width:100%;
+        float:right;
+    }
+    .slpAskQuestionMain {
+        flex-direction: row;
+    }
+    .slpAskQuestionLeft {
+        width: 50%;
+    }
+    .slpAskQuestionLeftImg {
+        max-width: 690px;
+        width: 100%;
+    }
+    .slpAskQuestionRight{
+        width:50%;
+        margin-top: 0px;
+        padding-left: 64px;
+    }
+    .slpFooterCol1, .slpFooterCol2, .slpFooterCol3, .slpFooterCol4 {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+    .slpFooterCol3, .slpFooterCol4{
+        margin-bottom: 0px;
+    }
+    .slpHideOnMobileDevice{
+        display: block;
+    }
+    .sticky .slpLogoSize {
+        width: 120px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media(min-width:1025px){
+    .slpMainHeader {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .slpNavItem {
+        font-size: var(--slpFontSize16);
+    }
+    .slpBannerGetStartBtn {
+        font-size: var(--slpFontSize14);
+    }
+    .slpPartnercol {
+        width: calc(16.66% - 10px);
+        margin-bottom: 0px !important;
+    }
+    .slpPartnercol img {
+        width: 160px;
+    }
+
+    .slpMainBannerLeft {
+        width: 50%;
+    }
+    .slpMainBannerRight {
+        width: 50%;
+    }
+
+
+ 
+    .slpMainBannerRightInner .slpBannerRightImg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+ 
+    .slpMainBannerRightInner {
+        max-width: 730px;
+        height: 600px;
+        width: 100%;
+        float: right;
+    }
+    .slpBannerHeadingText {
+        font-size: var(--slpFontSize48);
+        line-height: 60px;
+    }
+    .slpLineBreak{
+        display: block;
+    }
+
+    .slpCountDownTopText {
+        font-size: var( --slpFontSize36);
+    }
+    .slpSectionHeaderText {
+        font-size: var(--slpFontSize36);
+        line-height: 48px;
+    }
+    .slpChooseUsCol {
+        width: calc(25% - 45px);
+        margin-bottom: 0px !important;
+    }
+    .slpChooseUsTitle {
+        font-size: var(--slpFontSize20);
+    }
+
+    .slpFooterCol1{
+        width: 20%;
+        margin-bottom:0px !important
+    }
+    .slpFooterCol2 {
+        width: 20%;
+        margin-bottom:0px !important
+    }
+    .slpFooterCol3{
+        width:15%;
+        margin-bottom:0px !important
+    }
+    .slpFooterCol4{
+        width:22%;
+        margin-bottom:0px !important
+    }
+    .sticky .slpLogoSize {
+        width: 125px;
+    }
+}
+
+@media(min-width:1366px){
+    .slpPartnercol {
+        width: calc(16.66% - 20px);
+    }
+}
